@@ -1,0 +1,376 @@
+/* POPPINS FONT FAMILY */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+:root {
+    --primary-color: #4c47f6;
+    --blue-100: #e9edfd;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: #f8f8fa;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header nav {
+    float: right;
+    margin-top: 40px;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 60px;
+}
+
+.nav-item-active {
+    display: inline;
+    margin-right: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: var(--primary-color);
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.header-text {
+    padding: 80px 80px;
+}
+
+.header-text h2 {
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.header-image {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.companies {
+    margin: 40px 60px;
+}
+
+.company-items {
+    display: inline;
+    font-family: "Righteous";
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    margin-right: 40px;
+}
+
+.api {
+    padding: 40px 60px;
+    margin-top: 80px;
+}
+
+.api-heading {
+    font-size: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 40px 20px;
+    margin-right: 40px;
+}
+
+.card-active {
+    padding: 40px 20px;
+    margin-right: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(49, 49, 49, 0.084);
+}
+
+.card-head,
+.card-head-active {
+    margin-top: 20px;
+}
+
+.card-head-active {
+    color: var(--primary-color);
+}
+
+.blog-heading {
+    padding: 0px 60px;
+    margin-top: 80px;
+}
+
+.blog-heading h1 {
+    font-size: 3rem;
+}
+
+.blog-cards {
+    margin-top: 40px;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    border-top-left-radius: 100px;
+    margin-right: 40px;
+}
+
+.blog-content {
+    padding: 40px 40px;
+}
+
+.blog-bottom {
+    position: absolute;
+    bottom: -30px;
+    right: 30%;
+}
+
+.blog-author {
+    position: absolute;
+    bottom: -12px;
+    right: 15%;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--blue-100);
+    margin-top: 120px;
+}
+
+.faq-content {
+    padding: 40px 60px;
+}
+
+.faq-content h2 {
+    font-size: 2rem;
+}
+
+.faq-content h4 {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.faq-content button {
+    margin-top: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.faq-image {
+    align-self: flex-end;
+}
+
+.download-section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+}
+
+.download-content {
+    flex: 1;
+}
+
+.download-content span {
+    font-weight: 400;
+}
+
+.download-email {
+    flex: 1;
+    border-radius: 40px;
+    background-color: var(--blue-100);
+}
+
+.download-email form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-email form input {
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    background-color: transparent;
+    flex: 1;
+}
+
+.download-email form button {
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 10px;
+}
+
+.footer-section {
+    background-color: var(--primary-color);
+    padding: 120px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list,
+.logos-list {
+    margin-top: 20px;
+}
+
+.list-items {
+    list-style-type: none;
+    display: inline;
+    color: #fff;
+}
+
+.list-items:not(:first-child):before {
+    content: " | ";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-logos:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer-right {
+    text-align: end;
+}
+
+@media screen and (max-width: 1440px) {
+    .header-text h2 {
+        font-size: 2rem;
+    }
+    .company-items {
+        font-size: 1.5rem;
+    }
+    .header-image {
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-image {
+        width: 250px;
+    }
+    .api .cards {
+        flex-wrap: wrap;
+    }
+    .blog-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .faq-image img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-image {
+        display: none;
+    }
+    .api .cards {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .blog-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+        /* flex-direction: column; */
+    }
+    .blog-card {
+        flex: 1;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    .blog-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .blog-content {
+        padding: 20px;
+    }
+    .blog-bottom {
+        display: none;
+    }
+    .blog-author {
+        display: none;
+    }
+    .faq-section {
+        flex-direction: column;
+    }
+    .faq-image img {
+        width: 400px;
+    }
+    .download-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-section {
+        flex-direction: column;
+    }
+    header nav {
+        /* float: left; */
+        margin-top: 40px;
+        margin-left: 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        margin: 0px;
+    }
+    .nav-item-active {
+        margin-right: 0px;
+    }
+    .logo {
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+    .header-text {
+        padding: 40px;
+    }
+    .header-text h2 {
+        font-size: 2rem;
+    }
+    .download-section {
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+    .download-email form {
+        flex-direction: column;
+    }
+}
